@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    padding-top: 800px
+    padding-top: 800px;
+    text-align: center;
 }
 
 .profile {
@@ -58,26 +59,56 @@ p {
 .menu {
     list-style: none;
     font-family: sans-serif;
-    position: absolute;
-    top: 10px;
-    right: 30px;
+    position: fixed;
+    top: 0px;
+    margin-top: 0px;
+    background:white; 
     z-index: 10;
     cursor: pointer;
 
 }
 
 .links {
-    float: left;
-    color: #fff;
-    padding-top: 5px;
-    padding-left: 9px;
-    padding-right: 9px;
-    padding-bottom: 5px;
+    display:inline;
+    padding-left: 33px;
+    padding-right: 25px;
     font-family: Open Sans;
     font-size: 20px;
 
 }
 
 .links:hover {
-    background-color: aqua;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    text-shadow: 2px 2px gainsboro;
+}
+
+.article:hover {
+    color: aqua;
+}
+#writings a{
+text-shadow: none !important;
+    text-decoration: underline !important;
+    color: blue !important;
+}
+#contact{
+background-color: firebrick;    
+}
+#contact iframe{
+width: 100%;    
+}
+#contact_1 h3{
+display:inline;
+}
+#contact_1 a{
+color: white;
+text-shadow:none;
 }
